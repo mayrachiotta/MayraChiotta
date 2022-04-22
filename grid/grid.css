@@ -1,0 +1,57 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.body {
+
+    /* font-family: 'Comfortaa', cursive;*/
+}
+.grid {
+
+    background-color: red;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 50% 50%; /*coloco LA CANTIDAD de columnas espaciando. 
+    Guarda con que se puede derbordar. Se utiliza una unidad de medida disnta a las vistas.*/
+    grid-template-rows: 80px 50px 80px ;/* */
+    grid-template-areas: 
+    
+    " ele1 ele1" /*representa la primera fila*/
+    " ele2 ele3"/*representa la segunda fila*/
+    "ele4 ele5"/*representa la tercera fila*/
+    
+    ;
+
+    min-height: 500px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.grid_box1 {
+
+    grid-area: ele1;
+    background-color: brown; 
+}
+
+.grid_box2 {
+ background-color: violet;
+}
+
+.grid_box3 {
+ background-color: blue;
+}
+
+.grid_box4 {
+    background-color: aqua;
+}
+
+.grid_box5 {
+
+    background-color: yellow;
+
+}
+
+.grid_box6 {
+
+    background-color: black;
+}
