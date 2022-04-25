@@ -68,8 +68,8 @@
 }
 
 .header_title2 {
-    -webkit-animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1.5s both;
-    animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1.5s both;
+    -webkit-animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 @-webkit-keyframes text-focus-in {
@@ -162,6 +162,7 @@
 .nav_links li a:hover {
 
     background-color: #e6d5ce;
+      
 
 }
 
@@ -211,6 +212,7 @@
     font-size: 20px;
     margin-top: 40px;
     margin-bottom: 30px;
+    
 }
 
 .servicios p {
@@ -273,6 +275,92 @@
 
 button:hover {
 
+    -webkit-animation: heartbeat 2s ease-in-out both;
+    animation: heartbeat 2s ease-in-out both;
+
+}
+
+@-webkit-keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+
+button:hover {
+
     background-color: #263238;
     color: white;
 }
@@ -322,6 +410,8 @@ button:hover {
 
 .box_nosotros_img {
 
+
+    margin-bottom: 20px;
     /*border: 2px solid #263238;*/
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
 
@@ -584,15 +674,39 @@ button:hover {
 
 }
 
+
 .prof_img {
 
-    width: 400px;
     filter: contrast(1.2);
+    height: 500px;
+    animation: myAnim 3s ease 0s 1 normal forwards;
 }
+
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+        transform: rotateX(-100deg);
+        transform-origin: top;
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg);
+        transform-origin: top;
+    }
+}
+
 
 .prof_title2 {
 
-    background-color: #e9edc9;
+
+
+    background: #E6D5CE;
+    background: -moz-linear-gradient(top, #E6D5CE 0%, #E1CFC9 52%, #958A86 100%);
+    background: -webkit-linear-gradient(top, #E6D5CE 0%, #E1CFC9 52%, #958A86 100%);
+    background: linear-gradient(to bottom, #E6D5CE 0%, #E1CFC9 52%, #958A86 100%);
+
+
     color: #263238;
     padding: 20px;
     margin-right: 70px;
@@ -634,7 +748,7 @@ button:hover {
 .title_atencion {
 
     background-color: #263238;
-    color: #e9edc9;
+    color: #E1CFC9;
     text-align: center;
     padding-bottom: 40px;
     padding-top: 20px;
@@ -643,7 +757,7 @@ button:hover {
 }
 
 .atencion {
-    background-color: #e9edc9;
+    background-color: #E1CFC9;
     font-family: 'Comfortaa', cursive;
     display: flex;
     justify-content: space-evenly;
@@ -759,21 +873,6 @@ button:hover {
 
 }
 
-.traumato_img {
-    animation-name: img_serv;
-    animation-duration: 5s;
-    animation-delay: 3s;
-}
-
-@keyframes img_serv {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
 
 .rpg_text {
 
@@ -786,22 +885,6 @@ button:hover {
     margin-bottom: 10px;
 }
 
-.rpg_img {
-    animation-name: img_serv;
-    animation-duration: 5s;
-    animation-delay: 5s;
-}
-
-@keyframes img_serv {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
 .deporte {
 
     background: linear-gradient(#dcbda1, #FDEDEC);
@@ -812,21 +895,6 @@ button:hover {
     padding: 20px;
 }
 
-.deporte_img {
-    animation-name: img_serv;
-    animation-duration: 5s;
-    animation-delay: 6s;
-}
-
-@keyframes img_serv {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
 
 .deporte_text {
     width: 65%;
@@ -857,8 +925,20 @@ button:hover {
     height: 300px;
     border-radius: 50%;
     padding: 5px;
-
+    animation-name: img_serv;
+    animation-duration: 5s;
 }
+
+@keyframes img_serv {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 
 .galeria {
 
@@ -936,9 +1016,9 @@ button:hover {
     margin-bottom: 20px;
 }
 
-.os_list h2 {
-    -webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 3s both;
-    animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 3s both;
+.os_list {
+    -webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+    animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
 }
 
 @-webkit-keyframes tracking-in-contract-bck {
@@ -1243,8 +1323,11 @@ button:hover {
         font-size: 30px;
         margin-bottom: 30px;
         /*margin-right: 18%;*/
+    
 
     }
+
+
 
     .servicios p {
 
@@ -1282,7 +1365,7 @@ button:hover {
         flex-direction: column-reverse;
         justify-content: space-around;
     }
-    
+
 
     .nosotros_text {
 
@@ -1314,11 +1397,12 @@ button:hover {
         box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
         align-items: center;
         margin-top: 30px;
-        width: 100%;
         height: 300px;
+        margin-bottom: 20px;
 
 
     }
+
 
     .os_imgindex {
 
@@ -1402,7 +1486,7 @@ button:hover {
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
-        align-items:center;
+        align-items: center;
         flex-wrap: wrap;
     }
 
@@ -1410,7 +1494,7 @@ button:hover {
 
         text-align: justify;
         width: 100%;
-        
+
 
     }
 
@@ -1616,6 +1700,21 @@ button:hover {
 
         filter: contrast(1.2);
         width: 100%;
+        animation: myAnim 2s ease 1s 1 normal forwards;
+    }
+
+    @keyframes myAnim {
+        0% {
+            opacity: 0;
+            transform: rotateX(-100deg);
+            transform-origin: top;
+        }
+
+        100% {
+            opacity: 1;
+            transform: rotateX(0deg);
+            transform-origin: top;
+        }
     }
 
 
