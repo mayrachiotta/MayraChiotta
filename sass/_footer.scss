@@ -1,0 +1,136 @@
+.box_footer {
+
+    grid-area: ele3;
+    background-color: #263238;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+
+    .contacto {
+
+        display: flex;
+        flex-direction: column;
+
+        h4 {
+            color: $colorText;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        p {
+
+            color: $colorText;
+            line-height: 200%;
+            font-size: 14px;
+        }
+    }
+
+    .redes {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        .redes_icon {
+
+            width: 70px;
+            height: 70px;
+            padding: 10px;
+
+            &:hover {
+                -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+                animation: heartbeat 1.5s ease-in-out infinite both;
+
+
+                @-webkit-keyframes heartbeat {
+                    from {
+                        -webkit-transform: scale(1);
+                        transform: scale(1);
+                        -webkit-transform-origin: center center;
+                        transform-origin: center center;
+                        -webkit-animation-timing-function: ease-out;
+                        animation-timing-function: ease-out;
+                    }
+
+                    10% {
+                        -webkit-transform: scale(0.91);
+                        transform: scale(0.91);
+                        -webkit-animation-timing-function: ease-in;
+                        animation-timing-function: ease-in;
+                    }
+
+                    17% {
+                        -webkit-transform: scale(0.98);
+                        transform: scale(0.98);
+                        -webkit-animation-timing-function: ease-out;
+                        animation-timing-function: ease-out;
+                    }
+
+                    33% {
+                        -webkit-transform: scale(0.87);
+                        transform: scale(0.87);
+                        -webkit-animation-timing-function: ease-in;
+                        animation-timing-function: ease-in;
+                    }
+
+                    45% {
+                        -webkit-transform: scale(1);
+                        transform: scale(1);
+                        -webkit-animation-timing-function: ease-out;
+                        animation-timing-function: ease-out;
+                    }
+                }
+
+                @keyframes heartbeat {
+                    from {
+                        -webkit-transform: scale(1);
+                        transform: scale(1);
+                        -webkit-transform-origin: center center;
+                        transform-origin: center center;
+                        -webkit-animation-timing-function: ease-out;
+                        animation-timing-function: ease-out;
+                    }
+
+                    10% {
+                        -webkit-transform: scale(0.91);
+                        transform: scale(0.91);
+                        -webkit-animation-timing-function: ease-in;
+                        animation-timing-function: ease-in;
+                    }
+
+                    17% {
+                        -webkit-transform: scale(0.98);
+                        transform: scale(0.98);
+                        -webkit-animation-timing-function: ease-out;
+                        animation-timing-function: ease-out;
+                    }
+
+                    33% {
+                        -webkit-transform: scale(0.87);
+                        transform: scale(0.87);
+                        -webkit-animation-timing-function: ease-in;
+                        animation-timing-function: ease-in;
+                    }
+
+                    45% {
+                        -webkit-transform: scale(1);
+                        transform: scale(1);
+                        -webkit-animation-timing-function: ease-out;
+                        animation-timing-function: ease-out;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer_logo {
+
+        height: 160px;
+        display: flex;
+
+    }
+
+}

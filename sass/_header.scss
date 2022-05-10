@@ -1,0 +1,144 @@
+.box {
+
+    font-family: 'Raleway', sans-serif;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 100%;
+    grid-template-areas:
+
+        "ele1"
+        "ele2"
+        "ele3";
+
+    .box_header {
+
+        grid-area: ele1;
+        background-image: url(./../imagenes/backheader.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+    }
+
+    .button_header {
+        display: none;
+    }
+
+    .nav {
+
+        display: flex;
+
+        .nav_links {
+
+            font-weight: 600;
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            margin-top: 5%;
+            margin-right: 15px;
+
+        }
+
+        .nav_links li a {
+
+            text-decoration: none;
+            color: #263238;
+            font-size: 17px;
+            padding: 12px;
+            border-radius: 6px;
+
+            &:hover {
+
+                background-color: #e6d5ce;
+
+            }
+
+        }
+
+
+
+    }
+
+    .header_title {
+
+        color: #e6d5ce;
+        font-weight: 600;
+        font-size: 95px;
+        margin-top: 200px;
+        text-align: right;
+        margin-right: 15px;
+        -webkit-animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+
+        @-webkit-keyframes text-focus-in {
+            0% {
+                -webkit-filter: blur(12px);
+                filter: blur(12px);
+                opacity: 0;
+            }
+
+            100% {
+                -webkit-filter: blur(0px);
+                filter: blur(0px);
+                opacity: 1;
+            }
+        }
+
+        @keyframes text-focus-in {
+            0% {
+                -webkit-filter: blur(12px);
+                filter: blur(12px);
+                opacity: 0;
+            }
+
+            100% {
+                -webkit-filter: blur(0px);
+                filter: blur(0px);
+                opacity: 1;
+
+                @-webkit-keyframes text-focus-in {
+                    0% {
+                        -webkit-filter: blur(12px);
+                        filter: blur(12px);
+                        opacity: 0;
+                    }
+
+                    100% {
+                        -webkit-filter: blur(0px);
+                        filter: blur(0px);
+                        opacity: 1;
+                    }
+                }
+
+                @keyframes text-focus-in {
+                    0% {
+                        -webkit-filter: blur(12px);
+                        filter: blur(12px);
+                        opacity: 0;
+                    }
+
+                    100% {
+                        -webkit-filter: blur(0px);
+                        filter: blur(0px);
+                        opacity: 1;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .header_title2 {
+
+        color: #e6d5ce;
+        margin-top: 20px;
+        margin-right: 15px;
+        -webkit-animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1.5s both;
+        animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1.5s both;
+
+    }
+
+}
