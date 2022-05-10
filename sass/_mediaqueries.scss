@@ -1,0 +1,525 @@
+@media screen and (max-width: 992px) {
+
+    .img_os_ {
+
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .box {
+        .box_header {
+
+            .header_title {
+
+                color: #e6d5ce;
+                font-size: 60px;
+                padding-top: 20%;
+
+            }
+
+            .header_title2 {
+
+                color: #e6d5ce;
+                margin-top: 20px;
+                font-size: 20px;
+                margin-bottom: 40px;
+            }
+
+            .button_header {
+                display: flex;
+                justify-content: right;
+                padding: 20px;
+                font-size: 20px;
+            }
+
+            .nav {
+                display: none;
+            }
+
+        }
+
+
+        .servicios {
+            margin-top: 15%;
+
+            .servicios_title {
+
+                color: #263238;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-bottom: 30px;
+
+                .servicios h2 {
+
+                    font-size: 40px;
+                }
+
+                .servicios p {
+
+                    font-size: 25px;
+                    font-weight: 600;
+                }
+
+            }
+
+
+        }
+
+        .servicios1 {
+
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 50px;
+            margin-bottom: 5%;
+
+            .servicios1_box p {
+
+                font-size: 30px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                color: #263238;
+                align-items: right;
+
+            }
+
+            .servicios1_box_img {
+
+                width: 160px;
+                height: 160px;
+            }
+
+
+        }
+
+        .box_main_nos {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .nosotros_box {
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .nosotros_text {
+
+                margin-bottom: 10px;
+
+                p {
+
+
+                    font-family: 'Comfortaa', cursive;
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #263238;
+                }
+
+            }
+
+        }
+
+        .box_main_os {
+
+
+            .title_os {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: #F2F4F4;
+                padding: 20px;
+                color: #263238;
+                text-align: center;
+                font-size: 30px;
+                margin-bottom: 40px;
+                margin-top: 20px;
+
+            }
+
+            p {
+
+                font-size: 20px;
+
+            }
+
+            .os_img_container {
+
+                display: none;
+            }
+        }
+
+        .box_footer {
+
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+
+            .contacto {
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+
+                .contacto h4 {
+                    font-size: 35px;
+                }
+
+                .contacto p {
+
+                    font-size: 30px;
+
+                }
+
+            }
+
+            .redes {
+                margin-top: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .redes_icon {
+
+
+                    width: 80px;
+                    height: 80px;
+                    padding: 20px;
+
+                }
+
+            }
+
+            .footer_logo {
+
+                display: none;
+            }
+
+        }
+
+    }
+
+    main {
+
+        .traumato {
+            background-color: #dcbda1;
+            color: #263238;
+            display: flex;
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+
+            .traumato_img {
+
+                margin-top: 30px;
+                margin-bottom: 20px;
+
+            }
+
+            .traumato_text {
+
+                text-align: justify;
+
+                p {
+
+                    font-size: 25px;
+                }
+
+                h2 {
+                    margin-bottom: 10px;
+                    font-size: 30px;
+                    font-weight: bold;
+                    text-align: center;
+                }
+
+                h3 {
+
+                    font-size: 25px;
+                }
+
+                .traumato_list li {
+
+                    font-size: 23px;
+                    font-weight: bold;
+                }
+
+                .traumato_list li::before {
+
+                    content: ">";
+
+                }
+            }
+        }
+
+        .rpg {
+            background-color: #e9edc9;
+            color: #263238;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+
+            .rpg_text {
+
+                text-align: justify;
+
+                h2 {
+
+                    margin-bottom: 10px;
+                    text-align: center;
+                    font-size: 30px;
+                    font-weight: bold;
+
+                }
+
+                p {
+
+                    font-size: 25px;
+
+                }
+
+
+            }
+
+            .rpg_img {
+
+                margin-top: 30px;
+                margin-bottom: 20px;
+
+            }
+        }
+
+        .deporte {
+
+            background-color: #dcbda1;
+            color: #263238;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+
+            .deporte_text {
+
+                text-align: justify;
+
+
+                h2 {
+
+                    margin-bottom: 10px;
+                    text-align: center;
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+
+                p {
+
+                    font-size: 25px;
+                }
+
+
+                h3 {
+
+                    font-size: 25px;
+                }
+
+                .deporte_ol li {
+
+                    font-size: 23px;
+                }
+            }
+
+            .deporte_img {
+
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+        }
+
+
+
+        .atencion {
+            background-color: #e9edc9;
+            font-family: 'Comfortaa', cursive;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+
+
+    }
+
+
+
+
+    .atencion_img {
+
+        padding: 10px;
+        width: 100%;
+    }
+
+    .atencion_texto {
+
+        font-size: 30px;
+    }
+
+    .prof_img {
+
+        filter: contrast(1.2);
+        width: 100%;
+
+    }
+
+    .os_all_img {
+
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 562px) {
+
+    .box {
+        .box_header {
+
+            .header_title {
+
+                color: #e6d5ce;
+                font-size: 60px;
+                padding-top: 20%;
+
+            }
+
+            .header_title2 {
+
+                color: #e6d5ce;
+                margin-top: 20px;
+                font-size: 20px;
+                margin-bottom: 40px;
+            }
+
+            .button_header {
+                display: flex;
+                justify-content: right;
+                padding: 20px;
+                font-size: 20px;
+            }
+
+            .nav {
+                display: none;
+            }
+
+        }
+    }
+
+    .servicios_title {
+
+        color: #263238;
+        text-align: center;
+        margin-top: 20px;
+
+    }
+
+    .servicios1 {
+
+        display: flex;
+        flex-direction: column;
+        margin-top: -5px;
+    }
+
+    .servicios1_box {
+
+        font-size: 30px;
+        padding: 10px 15px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .servicios1_box p {
+
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .servicios1_box button {
+
+        font-size: 14px;
+
+    }
+
+    .servicios1_box_img {
+
+        width: 160px;
+        height: 160px;
+    }
+
+    .box_main_nos {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .nosotros_box {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .nosotros_text {
+
+        display: flex;
+        background-color: #b8bbbb;
+        margin-top: 0;
+    }
+
+    .nosotros_text p {
+
+        font-size: 16px;
+        color: hsl(180, 8%, 95%);
+
+    }
+
+    .title_os h2 {
+
+        font-size: 25px;
+
+    }
+
+    .title_os p {
+
+        font-size: 16px;
+    }
+
+    .button_header {
+        display: flex;
+        justify-content: right;
+        padding: 20px;
+        font-size: 20px;
+    }
+
+
+}
