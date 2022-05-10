@@ -1,0 +1,263 @@
+main {
+
+    .servicios_info {
+
+        color: #263238;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        margin: 40px;
+
+    }
+
+    .traumato {
+
+        background: linear-gradient(#FDEDEC, #dcbda1);
+        color: #263238;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 10px;
+
+
+        .traumato_img {
+
+            .servicios_img_3 {
+
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                padding: 5px;
+
+                animation-name: img_serv;
+                animation-duration: 5s;
+                animation-delay: 3s;
+
+                @keyframes img_serv {
+                    from {
+                        opacity: 0;
+                    }
+
+                    to {
+                        opacity: 1;
+                    }
+                }
+
+            }
+
+
+        }
+
+        .traumato_text {
+
+            
+            width: 65%;
+            text-align: justify;
+
+            h2 {
+                margin-bottom: 10px;
+            }
+
+            h3 {
+
+                margin-top: 10px;
+            }
+
+            .traumato_list {
+
+                list-style: none;
+            }
+
+            .traumato_list li {
+
+                font-size: 15px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .rpg {
+
+        background: linear-gradient(#ffffff, #b8bbbb);
+        color: #263238;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 20px;
+
+
+        .rpg_text {
+
+            width: 65%;
+            text-align: justify;
+
+            .rpg_text h2 {
+
+                margin-bottom: 10px;
+            }
+
+        }
+
+        .rpg_img {
+
+            .servicios_img_3 {
+
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                padding: 5px;
+
+
+
+                animation-name: img_serv;
+                animation-duration: 5s;
+                animation-delay: 5s;
+
+                @keyframes img_serv {
+                    from {
+                        opacity: 0;
+                    }
+
+                    to {
+                        opacity: 1;
+                    }
+                }
+
+
+            }
+
+        }
+    }
+
+
+    .deporte {
+
+        background: linear-gradient(#dcbda1, #FDEDEC);
+        color: #263238;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 20px;
+
+        .deporte_img {
+
+            .servicios_img_3 {
+
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                padding: 5px;
+
+
+                animation-name: img_serv;
+                animation-duration: 5s;
+                animation-delay: 6s;
+
+                @keyframes img_serv {
+                    from {
+                        opacity: 0;
+                    }
+
+                    to {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        .deporte_text {
+            width: 65%;
+            text-align: justify;
+
+            .deporte_text h2 {
+
+                margin-bottom: 10px;
+            }
+
+            .deporte_text h3 {
+
+                margin-top: 10px;
+            }
+
+            .deporte_text li {
+
+                list-style: none;
+                margin-top: 10px;
+
+            }
+        }
+
+    }
+
+    .galeria {
+
+        display: grid;
+        height: 500px;
+        margin-bottom: 5%;
+        padding: 20px;
+        grid-template-columns: 24% 24% 24% 24%;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 1rem;
+        row-gap: 1rem;
+
+        .galeria_1 {
+            background-image: url(../grid/1.jpg);
+            background-size: 100%;
+            background-size: cover;
+        }
+        
+        .galeria_2 {
+            background-image: url(../grid/2.jpg);
+            background-size: 100%;
+            background-size: cover;
+            ;
+        }
+        
+        .galeria_3 {
+            background-image: url(../grid/3.jpg);
+            background-size: 100%;
+            background-size: cover;
+        
+        }
+        
+        .galeria_4 {
+            background-image: url(../grid/4.jpg);
+            background-size: 100%;
+            background-size: cover;
+        
+        }
+        
+        .galeria_5 {
+            background-image: url(../grid/5.jpg);
+            background-size: 100%;
+            background-size: cover;
+        
+        }
+        
+        .galeria_6 {
+            background-image: url(../grid/6.jpg);
+            background-size: 100%;
+            background-size: cover;
+        
+        }
+
+        .galeria_7 {
+            background-image: url(../grid/7.jpg);
+            background-size: 100%;
+            background-size: cover;
+        
+        }
+        
+        .galeria_8 {
+            background-image: url(../grid/8.jpg);
+            background-size: 100%;
+            background-size: cover;
+        
+        }
+
+    }
+    
+}
