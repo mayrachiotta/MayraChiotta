@@ -2,6 +2,59 @@
   padding: 0%;
   margin: 0%; }
 
+.servicios_description_text, main .traumato .traumato_text, main .rpg .rpg_text, main .deporte .deporte_text {
+  width: 65%;
+  text-align: justify; }
+
+.servicios_img_circle, main .traumato .traumato_img .servicios_img_3, main .rpg .rpg_img .servicios_img_3, main .deporte .deporte_img .servicios_img_3 {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  padding: 5px; }
+
+.title_main, .box_main_serv .servicios .servicios_title h2, .box_main_serv .box_main_os .title_os h2, main .servicios_info {
+  color: #263238;
+  font-weight: 800;
+  font-size: 35px; }
+
+.galery, main .galeria .galeria_1, main .galeria .galeria_2, main .galeria .galeria_3, main .galeria .galeria_4, main .galeria .galeria_5, main .galeria .galeria_6, main .galeria .galeria_7, main .galeria .galeria_8 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100%; }
+
+h2 {
+  text-transform: uppercase; }
+
+.insta {
+  border-radius: 20px;
+  display: block;
+  padding: 0 10px;
+  color: #DD2A7B;
+  text-decoration: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600; }
+
+.whats {
+  border-radius: 20px;
+  display: block;
+  padding: 0 10px;
+  color: #00BB2D;
+  text-decoration: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600; }
+
+.fb {
+  border-radius: 20px;
+  display: block;
+  padding: 0 10px;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600; }
+
 .box {
   font-family: 'Raleway', sans-serif;
   display: grid;
@@ -105,15 +158,11 @@
     height: 150px;
     margin-top: 30px; }
     .box_main_serv .servicios .servicios_title {
-      color: #263238;
       text-align: center;
-      font-size: 20px;
       margin-top: 40px;
       margin-bottom: 30px; }
-    .box_main_serv .servicios .servicios_title h2 {
-      font-weight: 800; }
     .box_main_serv .servicios .servicios p {
-      font-size: 20px;
+      font-size: 33px;
       font-weight: 600; }
   .box_main_serv .servicios1 {
     display: flex;
@@ -157,7 +206,8 @@
         font-size: 40px;
         padding-top: 30px;
         padding-bottom: 30px;
-        color: #a79288;
+        font-weight: 800;
+        color: #e2c5b9;
         font-style: bold;
         align-items: right; }
       .box_main_serv .servicios1 .servicios1_box .servicios_container_img {
@@ -186,13 +236,15 @@
       padding: 20px;
       margin-top: 40px;
       width: 100%;
+      align-items: center;
+      justify-content: center;
       background-color: #ffece4; }
-      .box_main_serv .box_main_nos .nosotros_text .nosotros_text p {
-        color: #102e3d;
+      .box_main_serv .box_main_nos .nosotros_text p {
+        color: #263238;
         padding: 10px;
         line-height: 120%;
-        width: 100%;
-        font-size: 20px; }
+        font-size: 25px;
+        text-align: center; }
   .box_main_serv .box_main_os {
     margin-top: 50px;
     display: flex;
@@ -208,9 +260,7 @@
       text-align: center;
       font-size: 20px;
       margin-bottom: 40px; }
-      .box_main_serv .box_main_os .title_os .title_os h2 {
-        font-weight: 800; }
-      .box_main_serv .box_main_os .title_os .title_os p {
+      .box_main_serv .box_main_os .title_os p {
         margin-top: 20px;
         font-size: 25px;
         font-weight: 600; }
@@ -248,6 +298,9 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center; }
+    .box_footer .redes a {
+      text-decoration: none;
+      text-align: center; }
     .box_footer .redes .redes_icon {
       width: 70px;
       height: 70px;
@@ -343,8 +396,6 @@
     display: none; } }
 
 main .servicios_info {
-  color: #263238;
-  font-size: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -357,12 +408,9 @@ main .traumato {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  padding: 10px; }
+  padding: 20px;
+  box-shadow: 0 20px 30px #a09d9d; }
   main .traumato .traumato_img .servicios_img_3 {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    padding: 5px;
     animation-name: img_serv;
     animation-duration: 5s;
     animation-delay: 3s; }
@@ -372,37 +420,29 @@ main .traumato {
     opacity: 0; }
   to {
     opacity: 1; } }
-  main .traumato .traumato_text {
-    width: 65%;
-    text-align: justify; }
-    main .traumato .traumato_text h2 {
-      margin-bottom: 10px; }
-    main .traumato .traumato_text h3 {
-      margin-top: 10px; }
-    main .traumato .traumato_text .traumato_list {
-      list-style: none; }
-    main .traumato .traumato_text .traumato_list li {
-      font-size: 15px;
-      margin-top: 10px;
-      margin-bottom: 10px; }
+  main .traumato .traumato_text h2 {
+    margin-bottom: 10px; }
+  main .traumato .traumato_text h3 {
+    margin-top: 10px; }
+  main .traumato .traumato_text .traumato_list {
+    list-style: none; }
+  main .traumato .traumato_text .traumato_list li {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
 
 main .rpg {
-  background: linear-gradient(#ffffff, #b8bbbb);
+  background: linear-gradient(#FDEDEC, #dcbda1);
   color: #263238;
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 20px; }
-  main .rpg .rpg_text {
-    width: 65%;
-    text-align: justify; }
-    main .rpg .rpg_text .rpg_text h2 {
-      margin-bottom: 10px; }
+  padding: 20px;
+  box-shadow: 0 20px 30px #a09d9d;
+  background: linear-gradient(#ffffff, #b8bbbb); }
+  main .rpg .rpg_text .rpg_text h2 {
+    margin-bottom: 10px; }
   main .rpg .rpg_img .servicios_img_3 {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    padding: 5px;
     animation-name: img_serv;
     animation-duration: 5s;
     animation-delay: 5s; }
@@ -414,17 +454,14 @@ main .rpg {
     opacity: 1; } }
 
 main .deporte {
-  background: linear-gradient(#dcbda1, #FDEDEC);
+  background: linear-gradient(#FDEDEC, #dcbda1);
   color: #263238;
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 20px; }
+  padding: 20px;
+  box-shadow: 0 20px 30px #a09d9d; }
   main .deporte .deporte_img .servicios_img_3 {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    padding: 5px;
     animation-name: img_serv;
     animation-duration: 5s;
     animation-delay: 6s; }
@@ -434,16 +471,13 @@ main .deporte {
     opacity: 0; }
   to {
     opacity: 1; } }
-  main .deporte .deporte_text {
-    width: 65%;
-    text-align: justify; }
-    main .deporte .deporte_text .deporte_text h2 {
-      margin-bottom: 10px; }
-    main .deporte .deporte_text .deporte_text h3 {
-      margin-top: 10px; }
-    main .deporte .deporte_text .deporte_text li {
-      list-style: none;
-      margin-top: 10px; }
+  main .deporte .deporte_text .deporte_text h2 {
+    margin-bottom: 10px; }
+  main .deporte .deporte_text .deporte_text h3 {
+    margin-top: 10px; }
+  main .deporte .deporte_text .deporte_text li {
+    list-style: none;
+    margin-top: 10px; }
 
 main .galeria {
   display: grid;
@@ -455,37 +489,21 @@ main .galeria {
   column-gap: 1rem;
   row-gap: 1rem; }
   main .galeria .galeria_1 {
-    background-image: url(../grid/1.jpg);
-    background-size: 100%;
-    background-size: cover; }
+    background-image: url(../grid/1.jpg); }
   main .galeria .galeria_2 {
-    background-image: url(../grid/2.jpg);
-    background-size: 100%;
-    background-size: cover; }
+    background-image: url(../grid/2.jpg); }
   main .galeria .galeria_3 {
-    background-image: url(../grid/3.jpg);
-    background-size: 100%;
-    background-size: cover; }
+    background-image: url(../grid/3.jpg); }
   main .galeria .galeria_4 {
-    background-image: url(../grid/4.jpg);
-    background-size: 100%;
-    background-size: cover; }
+    background-image: url(../grid/4.jpg); }
   main .galeria .galeria_5 {
-    background-image: url(../grid/5.jpg);
-    background-size: 100%;
-    background-size: cover; }
+    background-image: url(../grid/5.jpg); }
   main .galeria .galeria_6 {
-    background-image: url(../grid/6.jpg);
-    background-size: 100%;
-    background-size: cover; }
+    background-image: url(../grid/6.jpg); }
   main .galeria .galeria_7 {
-    background-image: url(../grid/7.jpg);
-    background-size: 100%;
-    background-size: cover; }
+    background-image: url(../grid/7.jpg); }
   main .galeria .galeria_8 {
-    background-image: url(../grid/8.jpg);
-    background-size: 100%;
-    background-size: cover; }
+    background-image: url(../grid/8.jpg); }
 
 main .title_atencion {
   background-color: #263238;
@@ -508,7 +526,7 @@ main .atencion {
     padding: 20px;
     text-align: justify; }
     main .atencion .atencion_texto .atencion_texto p {
-      color: #333d29; }
+      color: #263238; }
   main .atencion .atencion_imgcontainer {
     padding: 20px; }
     main .atencion .atencion_imgcontainer .atencion_img {
@@ -692,24 +710,26 @@ main .atencion {
     main .deporte .deporte_img {
       margin-top: 30px;
       margin-bottom: 30px; }
-  main .atencion {
-    background-color: #e9edc9;
+  .atencion {
+    background-color: #e6d5ce;
     font-family: 'Comfortaa', cursive;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 40px; }
-  .atencion_img {
-    padding: 10px;
-    width: 100%; }
-  .atencion_texto {
-    font-size: 30px; }
-  .prof_img {
-    filter: contrast(1.2);
-    width: 100%; }
-  .os_all_img {
-    display: none; } }
+    margin-top: -20px;
+    margin-bottom: 60px; }
+    .atencion .atencion_texto {
+      font-size: 20px;
+      padding: 20px;
+      text-align: justify; }
+      .atencion .atencion_texto .atencion_texto p {
+        color: #333d29; }
+    .atencion .atencion_imgcontainer {
+      padding: 20px; }
+      .atencion .atencion_imgcontainer .atencion_img {
+        padding: 10px;
+        width: 100%; } }
 
 @media screen and (max-width: 562px) {
   .box .box_header .header_title {
@@ -728,48 +748,179 @@ main .atencion {
     font-size: 20px; }
   .box .box_header .nav {
     display: none; }
-  .servicios_title {
-    color: #263238;
-    text-align: center;
-    margin-top: 20px; }
-  .servicios1 {
+  .box .servicios {
+    margin-top: 15%; }
+    .box .servicios .servicios_title {
+      color: #263238;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 30px; }
+      .box .servicios .servicios_title .servicios h2 {
+        font-size: 40px; }
+      .box .servicios .servicios_title .servicios p {
+        font-size: 25px;
+        font-weight: 600; }
+  .box .servicios1 {
     display: flex;
     flex-direction: column;
-    margin-top: -5px; }
-  .servicios1_box {
-    font-size: 30px;
-    padding: 10px 15px;
-    align-items: center;
-    justify-content: center; }
-  .servicios1_box p {
-    font-size: 25px;
-    text-align: center; }
-  .servicios1_box button {
-    font-size: 14px; }
-  .servicios1_box_img {
-    width: 160px;
-    height: 160px; }
-  .box_main_nos {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 5%; }
+    .box .servicios1 .servicios1_box p {
+      font-size: 30px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      color: #263238;
+      align-items: right; }
+    .box .servicios1 .servicios1_box_img {
+      width: 160px;
+      height: 160px; }
+  .box .box_main_nos {
     display: flex;
     flex-direction: column;
     align-items: center; }
-  .nosotros_box {
+    .box .box_main_nos .nosotros_box {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .box .box_main_nos .nosotros_text {
+      margin-bottom: 10px; }
+      .box .box_main_nos .nosotros_text p {
+        font-family: 'Comfortaa', cursive;
+        font-size: 20px;
+        font-weight: 600;
+        color: #263238; }
+  .box .box_main_os .title_os {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: center; }
-  .nosotros_text {
-    display: flex;
-    background-color: #b8bbbb;
-    margin-top: 0; }
-  .nosotros_text p {
-    font-size: 16px;
-    color: #f1f3f3; }
-  .title_os h2 {
-    font-size: 25px; }
-  .title_os p {
-    font-size: 16px; }
-  .button_header {
-    display: flex;
-    justify-content: right;
+    background-color: #F2F4F4;
     padding: 20px;
-    font-size: 20px; } }
+    color: #263238;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-top: 20px; }
+  .box .box_main_os p {
+    font-size: 20px; }
+  .box .box_main_os .os_img_container {
+    display: none; }
+  .box .box_footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; }
+    .box .box_footer .contacto {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%; }
+      .box .box_footer .contacto .contacto h4 {
+        font-size: 35px; }
+      .box .box_footer .contacto .contacto p {
+        font-size: 30px; }
+    .box .box_footer .redes {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .box .box_footer .redes .redes_icon {
+        width: 80px;
+        height: 80px;
+        padding: 20px; }
+    .box .box_footer .footer_logo {
+      display: none; }
+  main .traumato {
+    background-color: #dcbda1;
+    color: #263238;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; }
+    main .traumato .traumato_img {
+      margin-top: 30px;
+      margin-bottom: 20px; }
+    main .traumato .traumato_text {
+      text-align: justify; }
+      main .traumato .traumato_text p {
+        font-size: 25px; }
+      main .traumato .traumato_text h2 {
+        margin-bottom: 10px;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center; }
+      main .traumato .traumato_text h3 {
+        font-size: 25px; }
+      main .traumato .traumato_text .traumato_list li {
+        font-size: 23px;
+        font-weight: bold; }
+      main .traumato .traumato_text .traumato_list li::before {
+        content: ">"; }
+  main .rpg {
+    background-color: #e9edc9;
+    color: #263238;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px; }
+    main .rpg .rpg_text {
+      text-align: justify; }
+      main .rpg .rpg_text h2 {
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold; }
+      main .rpg .rpg_text p {
+        font-size: 25px; }
+    main .rpg .rpg_img {
+      margin-top: 30px;
+      margin-bottom: 20px; }
+  main .deporte {
+    background-color: #dcbda1;
+    color: #263238;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px; }
+    main .deporte .deporte_text {
+      text-align: justify; }
+      main .deporte .deporte_text h2 {
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold; }
+      main .deporte .deporte_text p {
+        font-size: 25px; }
+      main .deporte .deporte_text h3 {
+        font-size: 25px; }
+      main .deporte .deporte_text .deporte_ol li {
+        font-size: 23px; }
+    main .deporte .deporte_img {
+      margin-top: 30px;
+      margin-bottom: 30px; }
+  .atencion {
+    background-color: #e6d5ce;
+    font-family: 'Comfortaa', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -20px;
+    margin-bottom: 60px; }
+    .atencion .atencion_texto {
+      font-size: 20px;
+      padding: 20px;
+      text-align: justify; }
+      .atencion .atencion_texto .atencion_texto p {
+        color: #333d29; }
+    .atencion .atencion_imgcontainer {
+      padding: 20px; }
+      .atencion .atencion_imgcontainer .atencion_img {
+        padding: 10px;
+        width: 100%; } }
