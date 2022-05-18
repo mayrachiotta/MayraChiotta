@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: nowrap;
     padding: 20px;
 
     div {
@@ -16,7 +17,7 @@
             margin-top: 50px;
             }
         
-            p {
+        p {
             font-size: 20px;
             text-align: center;
             color: $colorTitle;
@@ -30,6 +31,8 @@
     div {
 
         .img_os {
+
+            
             overflow: hidden;
         }
     }

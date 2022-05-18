@@ -159,11 +159,11 @@ h2 {
     margin-top: 30px; }
     .box_main_serv .servicios .servicios_title {
       text-align: center;
-      margin-top: 40px;
+      margin-top: 80px;
       margin-bottom: 30px; }
-    .box_main_serv .servicios .servicios p {
-      font-size: 33px;
-      font-weight: 600; }
+      .box_main_serv .servicios .servicios_title p {
+        font-size: 20px;
+        font-weight: 600; }
   .box_main_serv .servicios1 {
     display: flex;
     flex-direction: row;
@@ -203,7 +203,7 @@ h2 {
     -webkit-transform-origin: top;
     transform-origin: top; } }
       .box_main_serv .servicios1 .servicios1_box p {
-        font-size: 40px;
+        font-size: 30px;
         padding-top: 30px;
         padding-bottom: 30px;
         font-weight: 800;
@@ -375,6 +375,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
   padding: 20px; }
   .os_all_img div h2 {
     font-size: 35px;
@@ -538,22 +539,29 @@ main .atencion {
     display: none; } }
 
 @media screen and (max-width: 768px) {
-  .box .box_header .header_title {
-    color: #e6d5ce;
-    font-size: 60px;
-    padding-top: 20%; }
-  .box .box_header .header_title2 {
-    color: #e6d5ce;
-    margin-top: 20px;
-    font-size: 20px;
-    margin-bottom: 40px; }
-  .box .box_header .button_header {
-    display: flex;
-    justify-content: right;
-    padding: 20px;
-    font-size: 20px; }
-  .box .box_header .nav {
-    display: none; }
+  .box .box_header {
+    background-image: url(./../imagenes/backheader.jpg);
+    align-items: flex-start;
+    align-items: left; }
+    .box .box_header .header_title {
+      color: #e6d5ce;
+      text-align: left;
+      margin-left: 20px;
+      font-size: 60px;
+      padding-top: 20%; }
+    .box .box_header .header_title2 {
+      color: #e6d5ce;
+      margin-top: 20px;
+      font-size: 20px;
+      margin-left: 20px;
+      margin-bottom: 40px; }
+    .box .box_header .button_header {
+      display: flex;
+      justify-content: right;
+      padding: 20px;
+      font-size: 20px; }
+    .box .box_header .nav {
+      display: none; }
   .box .servicios {
     margin-top: 15%; }
     .box .servicios .servicios_title {
@@ -563,9 +571,9 @@ main .atencion {
       justify-content: center;
       margin-bottom: 30px; }
       .box .servicios .servicios_title .servicios h2 {
-        font-size: 40px; }
+        font-size: 30px; }
       .box .servicios .servicios_title .servicios p {
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 600; }
   .box .servicios1 {
     display: flex;
@@ -710,6 +718,14 @@ main .atencion {
     main .deporte .deporte_img {
       margin-top: 30px;
       margin-bottom: 30px; }
+  main section .galeria {
+    display: grid;
+    margin-bottom: 5%;
+    padding: 20px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem; }
   .atencion {
     background-color: #e6d5ce;
     font-family: 'Comfortaa', cursive;
@@ -729,25 +745,40 @@ main .atencion {
       padding: 20px; }
       .atencion .atencion_imgcontainer .atencion_img {
         padding: 10px;
-        width: 100%; } }
+        width: 100%; }
+  .os_all_img div h2 {
+    font-size: 20px;
+    color: #263238;
+    margin-top: 50px; }
+  .os_all_img div p {
+    font-size: 17px;
+    color: #263238;
+    padding: 20px;
+    margin-bottom: 20px; }
+  .os_all_img div .img_os {
+    overflow: hidden; } }
 
 @media screen and (max-width: 562px) {
-  .box .box_header .header_title {
-    color: #e6d5ce;
-    font-size: 60px;
-    padding-top: 20%; }
-  .box .box_header .header_title2 {
-    color: #e6d5ce;
-    margin-top: 20px;
-    font-size: 20px;
-    margin-bottom: 40px; }
-  .box .box_header .button_header {
-    display: flex;
-    justify-content: right;
-    padding: 20px;
-    font-size: 20px; }
-  .box .box_header .nav {
-    display: none; }
+  .box .box_header {
+    background-image: url(./../imagenes/backheader.jpg);
+    align-items: flex-start;
+    align-items: left; }
+    .box .box_header .header_title {
+      color: #e6d5ce;
+      font-size: 60px;
+      padding-top: 20%; }
+    .box .box_header .header_title2 {
+      color: #e6d5ce;
+      margin-top: 20px;
+      font-size: 20px;
+      margin-bottom: 40px; }
+    .box .box_header .button_header {
+      display: flex;
+      justify-content: right;
+      padding: 20px;
+      font-size: 20px; }
+    .box .box_header .nav {
+      display: none; }
   .box .servicios {
     margin-top: 15%; }
     .box .servicios .servicios_title {
@@ -756,11 +787,10 @@ main .atencion {
       flex-direction: column;
       justify-content: center;
       margin-bottom: 30px; }
-      .box .servicios .servicios_title .servicios h2 {
-        font-size: 40px; }
-      .box .servicios .servicios_title .servicios p {
-        font-size: 25px;
-        font-weight: 600; }
+      .box .servicios .servicios_title h2 {
+        font-size: 25px; }
+      .box .servicios .servicios_title p {
+        font-size: 20px; }
   .box .servicios1 {
     display: flex;
     flex-direction: column;
@@ -904,6 +934,14 @@ main .atencion {
     main .deporte .deporte_img {
       margin-top: 30px;
       margin-bottom: 30px; }
+  main section .galeria {
+    display: grid;
+    margin-bottom: 5%;
+    padding: 20px;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem; }
   .atencion {
     background-color: #e6d5ce;
     font-family: 'Comfortaa', cursive;

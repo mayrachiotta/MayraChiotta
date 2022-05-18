@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
 
+
     .servicios {
 
         color: $colorTitle;
@@ -19,20 +20,22 @@
         .servicios_title {
 
             text-align: center;
-            margin-top: 40px;
+            margin-top: 80px;
             margin-bottom: 30px;
+
+            h2 {
+
+                @extend .title_main
+            }
+    
+            p {
+    
+                font-size: 20px;
+                font-weight: 600;
+            }
         }
 
-        .servicios_title h2 {
-
-            @extend .title_main
-        }
-
-        .servicios p {
-
-            font-size: 33px;
-            font-weight: 600;
-        }
+       
 
     }
 
@@ -92,7 +95,7 @@
 
             p {
 
-                font-size: 40px;
+                font-size: 30px;
                 padding-top: 30px;
                 padding-bottom: 30px;
                 font-weight: 800;
