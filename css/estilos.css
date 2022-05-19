@@ -552,8 +552,7 @@ main .atencion {
     backdrop-filter: opacity 10%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between; }
+    align-items: flex-start; }
     .box .box_header div div .nav_links {
       font-size: 15px; }
       .box .box_header div div .nav_links li {
@@ -786,7 +785,6 @@ main .atencion {
     height: 700px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     flex-wrap: nowrap; }
     .box .box_header .header_title {
       color: #e6d5ce;
