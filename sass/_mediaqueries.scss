@@ -15,33 +15,69 @@
         .box_header {
 
             background-image: url(./../imagenes/backheader.jpg);
+            backdrop-filter: opacity (10%);
+            display: flex;
+            flex-direction: row;
             align-items: flex-start;
-            align-items: left;
-            
+            justify-content: space-between;
+
+
+            div {
+
+                div {
+
+                    .nav_links {
+
+                        font-size: 15px;
+
+                        li{
+
+                            list-style: none;
+                            text-align: center;
+                            padding: 5px 0px;
+                            border: solid;
+                            border-radius: 10px;
+                            border-color: $colorLightPink;
+                            margin: 10px 0px;
+                            padding: 5px 5px;
+                            background-color: $colorTitle;
+                            
+
+                        }
+                        li a {
+                            text-decoration: none;
+                            color: $colorLightPink;
+
+                        }
+                         
+
+                    }
+
+                }
+            }
+
             .header_title {
 
                 color: $colorLightPink;
                 text-align: left;
                 margin-left: 20px;
-                font-size: 60px;
-                padding-top: 20%;
+                font-size: 50px;
+                text-align: right;
 
             }
 
             .header_title2 {
 
-                color: $colorLightPink;
-                margin-top: 20px;
-                font-size: 20px;
-                margin-left: 20px;
-                margin-bottom: 40px;
+                display: none;
+
+
             }
 
             .button_header {
                 display: flex;
                 justify-content: right;
                 padding: 20px;
-                font-size: 20px;
+                font-size: 30px;
             }
 
             .nav {
@@ -145,7 +181,7 @@
                 align-items: center;
                 background-color: #F2F4F4;
                 padding: 20px;
-                color: $colorTitle;  
+                color: $colorTitle;
                 text-align: center;
                 font-size: 30px;
                 margin-bottom: 40px;
@@ -356,7 +392,7 @@
             }
 
         }
-         
+
         section {
             .galeria {
 
@@ -417,15 +453,15 @@
                 font-size: 20px;
                 color: $colorTitle;
                 margin-top: 50px;
-                }
-            
-                p {
+            }
+
+            p {
                 font-size: 17px;
                 color: $colorTitle;
                 padding: 20px;
                 margin-bottom: 20px;
-                }
-    
+            }
+
         }
 
         div {
@@ -436,7 +472,7 @@
         }
 
     }
-  
+
 }
 
 @media screen and (max-width: 562px) {
@@ -445,26 +481,23 @@
     .box {
         .box_header {
 
-            
+
             background-image: url(./../imagenes/backheader.jpg);
-            align-items: flex-start;
-            align-items: left;
-            
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+
 
             .header_title {
 
                 color: #e6d5ce;
-                font-size: 60px;
-                padding-top: 20%;
+                font-size: 40px;
 
             }
 
             .header_title2 {
 
-                color: #e6d5ce;
-                margin-top: 20px;
-                font-size: 20px;
-                margin-bottom: 40px;
+                display: none;
             }
 
             .button_header {
@@ -789,6 +822,7 @@
             }
 
         }
+
         section {
             .galeria {
 
